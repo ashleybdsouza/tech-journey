@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashley Dsouza - Portfolio/Blog</title>
-    <link rel="stylesheet" href="styles/styles.css">
+      <link rel="icon" type="image/x-icon" href="/images/favicon.webp">
+    <link rel="stylesheet" href="../../styles/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap" rel="stylesheet">
-</head>
-<body>
+    <title>Welcome to my portfolio/blog!</title>
+  </head>
+  <body>
     <header>
         <nav>
             <ul>
@@ -20,81 +21,64 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <!-- Home/About section -->
-        <section id="home">
-            <h1>Welcome to my portfolio/blog!</h1>
-            <p>I will showcase some CSS and Javascript tricks in the portfolio section and Tips and explanations in the blog.</p>
-        </section>
-        <!-- Portfolio section -->
-        <section id="portfolio">
-            <h1>Portfolio</h1>
-            <div class="portfolio-container">
-                <a href="pages/how-to-homepage.html" class="portfolio-item">
-                  <img class="project-image" src="images/HomePage Thumbnail.png" alt="project">
-                  <p class="project-title">
-                    Basic HTML explanation
-                  </p>
-                </a>
-                <a href="pages/how-to-tribute-page.html" class="blog-post">
-                  <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project">
-                  <p class="project-title">
-                    Basic CSS Explanation
-                  </p>
-                </a>
-                <a href="pages/how-to-homepage.html" class="portfolio-item">
-                  <img class="project-image" src="images/HomePage Thumbnail.png" alt="project">
-                  <p class="project-title">
-                    Basic HTML explanation
-                  </p>
-                </a>
-                <a href="pages/how-to-tribute-page.html" class="blog-post">
-                  <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project">
-                  <p class="project-title">
-                    Basic CSS Explanation
-                  </p>
-                </a>
-            </div>
-        </section>
-        <!-- Blog section -->
-        <section id="blog">
-            <h1>Blog</h1>
-            <div class="blog-container">
-                <a href="pages/how-to-homepage.html" class="blog-post">
-                  <img class="project-image" src="images/HomePage Thumbnail.png" alt="project">
-                  <p class="project-title">
-                    Basic HTML explanation
-                  </p>
-                </a>
-                <a href="pages/how-to-tribute-page.html" class="blog-post">
-                  <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project">
-                  <p class="project-title">
-                    Basic CSS Explanation
-                  </p>
-                </a>
-                <a href="pages/how-to-homepage.html" class="portfolio-item">
-                  <img class="project-image" src="images/HomePage Thumbnail.png" alt="project">
-                  <p class="project-title">
-                    Basic HTML explanation
-                  </p>
-                </a>
-                <a href="pages/how-to-tribute-page.html" class="blog-post">
-                  <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project">
-                  <p class="project-title">
-                    Basic CSS Explanation
-                  </p>
-                </a>
-            </div>
-        </section>
-        <!-- Contact section -->
-        <section id="contact" class="contact-section">
+    <section id="title-section" class="title-section">
+        <img class="logo" src = "/images/favicon.webp" />
+        <h1 id="title"> Welcome to my portfolio/blog!</h1>
+    </section>
+    <main id="main">
+      <section id="home">
+    <p>I will showcase some CSS and Javascript tricks in the portfolio section and Tips and explanations in the blog.</p>
+</section>
+
+<section id="portfolio">
+    <h1>Portfolio</h1>
+        <div class="portfolio-container">
+                
+                    <a href="/pages/Calculator/" class="portfolio-item">
+                      <img class="project-image" src=" /images/calculator.png" alt="project">
+                      <p class="project-title">Javascript Calculator </p>
+                    </a>
+                
+                    <a href="/pages/Restaurant menu/" class="portfolio-item">
+                      <img class="project-image" src=" /images/restaurant-menu.png" alt="project">
+                      <p class="project-title">A Restaurant Menu </p>
+                    </a>
+                
+                    <a href="/pages/tribute/" class="portfolio-item">
+                      <img class="project-image" src=" https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project">
+                      <p class="project-title">A Tribute page </p>
+                    </a>
+                
+                  <div class="view-more">
+                      <a href="/more-portfolio">View More</a>
+                    </div>
+        </div>
+</section>
+<section id="blog">
+    <h1>Blog</h1>
+    <div class="blog-container">
+        <ul>
+            
+            <li>
+                <a href = "/posts/css-explain-10-17/" class="blog-post">Basic CSS Explanation </a>
+                <p class="project-title">This post explains basics of CSS.</p>
+            </li>
+            
+            <li>
+                <a href = "/posts/html-explain/" class="blog-post">Basic HTML Explanation </a>
+                <p class="project-title">This post explains basics of HTML.</p>
+            </li>
+            
+        </ul>
+    </div>
+</section>
+<section id="contact" class="contact-section">
             <h1 class="contact-section-header">Get in touch</h1>
             <div class="contact-links">
-                <a id="profile-link" href="https://github.com/dsouzabash" target="_blank" class="btn contact-details"><i class="fab fa-github"></i></a>
+                <a id="profile-link" href="https://github.com/ashleybdsouza" target="_blank" class="btn contact-details"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/ashleybdsouza/" target="_blank" class="btn contact-details"><i class="fab fa-linkedin"></i></a>
             </div>
         </section>
     </main>
-    <script src="scripts/script.js"></script>
-</body>
+  </body>
 </html>

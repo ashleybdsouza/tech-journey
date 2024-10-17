@@ -1,0 +1,28 @@
+---
+layout: base_layout.html
+---
+<section id="home">
+    <p>I will showcase some CSS and Javascript tricks in the portfolio section and Tips and explanations in the blog.</p>
+</section>
+
+{{content}}
+<section id="blog">
+    <h1>Blog</h1>
+    <div class="blog-container">
+        <ul>
+            {% for post in collections.post %}
+            <li>
+                <a href = "{{ post.url }}" class="blog-post">{{ post.data.title }} </a>
+                <p class="project-title">{{ post.data.description }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+<section id="contact" class="contact-section">
+            <h1 class="contact-section-header">Get in touch</h1>
+            <div class="contact-links">
+                <a id="profile-link" href="https://github.com/ashleybdsouza" target="_blank" class="btn contact-details"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ashleybdsouza/" target="_blank" class="btn contact-details"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </section>

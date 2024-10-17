@@ -1,3 +1,6 @@
+const pluginFilters = require("./_config/filters.js");
+
+
 module.exports = function(eleventyConfig) {
   // Output directory: _site
 
@@ -15,6 +18,15 @@ module.exports = function(eleventyConfig) {
   
   // Copy `images/` to `_site/images`
   eleventyConfig.addPassthroughCopy("images");
+
+  // Copy `posts/` to `_site/posts`
+  eleventyConfig.addPassthroughCopy("posts");
+
+  // Copy `_includes/` to `_site/_includes`
+  eleventyConfig.addPassthroughCopy("_includes");
+
+  // Copy `_config/` to `_site/_includes`
+  eleventyConfig.addPassthroughCopy("_config");
 
   // Copy `css/fonts/` to `_site/css/fonts`
   // Keeps the same directory structure.
